@@ -26,9 +26,9 @@ import {
           <View style={styles.header}>
             <Image source={require('../resource/images/instagram-logo-type.png')} style={styles.imageSize} />
             <View style={styles.icons}>
-            <Icon name='ios-add-circle-outline' color='black' size={25} style={styles.indivicualIcons}/>
-            <Icon name='heart-outline' color='black' size={25} style={styles.indivicualIcons}/>
-            <Icon name='paper-plane-outline' color='black' size={25} style={styles.indivicualIcons}/>
+            <Icon name='ios-add-circle-outline' color='black' size={28} style={styles.indivicualIcons}/>
+            <Icon name='heart-outline' color='black' size={28} style={styles.indivicualIcons}/>
+            <Icon name='paper-plane-outline' color='black' size={28} style={styles.indivicualIcons}/>
             </View>
           </View>
        );
@@ -43,7 +43,8 @@ import {
         flexDirection: 'row',
         justifyContent: 'space-between',
         height: 'auto',
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
+        marginBottom: 5
     },
     indivicualIcons:{
         marginHorizontal: 8

@@ -17,6 +17,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import HeaderInstagram from './components/header'
+import Histories from './components/hiestories/histories'
 
 
 const App = () => {
@@ -27,13 +28,15 @@ const App = () => {
   };
 
   return (
-    <>
+    < >
       <StatusBar barStyle='light-content' backgroundColor='#ffffff'/>
 
       <View style={styles.mainContainer}>
         <HeaderInstagram />
       </View>
-      <ScrollView style={{backgroundColor: Colors.lighter}}>
+      <Histories />
+      <ScrollView style={{backgroundColor: Colors.lighter, flex: 1}}>
+       
         <Text>
           hola
         </Text>
@@ -44,8 +47,13 @@ const App = () => {
 
 const styles = StyleSheet.create({
  mainContainer:{
-   height: '7%',
-   backgroundColor: 'blue'
+   height: '9%',
+   backgroundColor: 'white'
+ },
+
+ container:{
+
+ 
  }
 });
 
