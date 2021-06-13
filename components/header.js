@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {
     SafeAreaView,
@@ -25,15 +26,9 @@ import {
           <View style={styles.header}>
             <Image source={require('../resource/images/instagram-logo-type.png')} style={styles.imageSize} />
             <View style={styles.icons}>
-                <Text>
-                    icono 1
-                </Text>
-                <Text>
-                    icono 2
-                </Text>
-                <Text>
-                    icono 3
-                </Text>
+            <Icon name='ios-add-circle-outline' color='black' size={25} style={styles.indivicualIcons}/>
+            <Icon name='heart-outline' color='black' size={25} style={styles.indivicualIcons}/>
+            <Icon name='paper-plane-outline' color='black' size={25} style={styles.indivicualIcons}/>
             </View>
           </View>
        );
@@ -43,21 +38,25 @@ import {
     
     header:{
         flex: 1,
-        padding:10,
-        backgroundColor: Colors.white,
-        height: 50,
+        paddingTop: 10,
+        backgroundColor: 'white',
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        height: 'auto',
+        paddingHorizontal: 10
     },
-
+    indivicualIcons:{
+        marginHorizontal: 8
+    },
     icons:{
         flexDirection: 'row',
-        justifyContent: 'flex-end'
+        justifyContent: 'flex-end',
+        paddingTop: 5
     },
     
     imageSize:{
-        width:90,
-        height: 30
+        width:130,
+        height: 45
     }
   });
    

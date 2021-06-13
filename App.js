@@ -8,7 +8,6 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
 import {
   Colors,
   DebugInstructions,
@@ -24,40 +23,30 @@ const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: Colors.lighter,
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView>
-        <HeaderInstagram/>
+    <>
+      <StatusBar barStyle='light-content' backgroundColor='#ffffff'/>
 
-       <Text>
-         Hola
-       </Text>
-      </ScrollView>
-    </SafeAreaView>
+      <View style={styles.mainContainer}>
+        <HeaderInstagram />
+      </View>
+      <ScrollView style={{backgroundColor: Colors.lighter}}>
+        <Text>
+          hola
+        </Text>
+        </ScrollView>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+ mainContainer:{
+   height: '7%',
+   backgroundColor: 'blue'
+ }
 });
 
 export default App;
