@@ -31,9 +31,8 @@ const Histories = () => {
                */}
                 <View  style={styles.storie}>
                     <View >
-                      <Image style={styles.img} source={{uri: 'https://images.unsplash.com/photo-1619418170841-afea868fdc58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'}}>
+                      <Image style={styles.img} source={{uri: 'https://images.unsplash.com/photo-1619418170841-afea868fdc58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'}}/>
                         
-                      </Image>
                     </View>
                     <View style={styles.texthisotire}>
                       <Text>
@@ -60,6 +59,8 @@ const styles = StyleSheet.create({
       backgroundColor: 'white',
       paddingTop:1,
       paddingBottom: 5,
+      borderBottomWidth: 0.2,
+      borderBottomColor: 'gray'
     },
 
     storie:{
