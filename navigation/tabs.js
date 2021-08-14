@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Probando from '../screens/probando'
 import HomeScreen from '../screens/HomeScreen'
 import Icon from 'react-native-vector-icons/FontAwesome';
-
+import Search from '../screens/Search'
 
 const Tab= createBottomTabNavigator();
 
@@ -31,7 +31,7 @@ const Tabs = () => {
                 ),
 
                 tabBarShowLabel:false
-            }}  component={HomeScreen} />
+            }}  component={Search} />
             
             
         </Tab.Navigator>

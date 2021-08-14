@@ -21,9 +21,10 @@ const Individualstory = () => {
     }, [])
 
     const fetchData = () => {
-        return fetch("https://source.unsplash.com/random")
+        return fetch("https://picsum.photos/200")
               .then((response) => 
               {
+                  console.log(response.url)
                   setUrl(response.url)
               })
             }
